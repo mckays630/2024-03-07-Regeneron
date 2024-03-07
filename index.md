@@ -315,25 +315,7 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 <hr/>
 {% endif %}
 
-
-{% comment %}
-SURVEYS - DO NOT EDIT SURVEY LINKS
-{% endcomment %}
-<h2 id="surveys">Surveys</h2>
-<p>Please be sure to complete these surveys before and after the workshop.</p>
-{% if site.carpentry == "incubator" %}
-<p><a href="{{ site.incubator_pre_survey }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.incubator_post_survey }}">Post-workshop Survey</a></p>
-{% elsif site.incubator_pre_survey or site.incubator_post_survey %}
-<div class="alert alert-danger">
-WARNING: you have defined custom pre- and/or post-survey links for
-a workshop not configured for The Carpentries Incubator
-(the value of `curriculum` is not set to `incubator` in `_config.yml`).
-Please comment out the `incubator_pre_survey` and `incubator_post_survey` fields
-in `_config.yml` or, if this workshop is teaching a lesson in the Incubator,
-change the value of `carpentry` to `incubator`.
-</div>
-{% else %}
+<h2>Survey Links</h2>
 <p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 {% endif %}
@@ -342,22 +324,25 @@ change the value of `carpentry` to `incubator`.
 
 <h2 id="schedule">Schedule</h2>
 
-
 <div class="row">
-  <div class="col-md-6">
     <h3>Day 1</h3>
-    <table class="table table-striped">
-      <tr> <td>Before</td> <td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank" rel="noopener noreferrer">Pre-workshop survey</a> </td> </tr>
-      <tr> <td>08:30</td>  <td>Automating Tasks with the Unix Shell</td> </tr>
-      <tr> <td>9:00</td>  <td>R Part 1</td> </tr>
+    <table class="table table-striped"> 
+      <tr> <td>08:30</td>  <td>        <ul>
+          <li>Setup</li>
+          <li><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></li>
+        </ul></td> </tr>
+      <tr> <td>09:00</td>  <td>Python Part 1 - Sheldon McKay</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>R Part 2</td> </tr>
-      <tr> <td>15:30</td>  <td>Wrap-up<BR><a href="https://carpentries.typeform.com/to/UgVdRQ?slug=2023-08-30-Regeneron">Post-Workshop Survey
+      <tr> <td>13:00</td>  <td>R Part 2 - Haizi Zheng</td> </tr>
+      <tr> <td>15:45</td>  <td>
+        <ul>
+          <li>Wrap-up</li>
+          <li><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p></li>
+        </ul>
       </td> </tr>
       <tr> <td>16:00</td>  <td>END</td> </tr>
     </table>
-  </div>
-</div><hr/>
+</div>
 
 
 
