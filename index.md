@@ -325,12 +325,14 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 <h2 id="schedule">Schedule</h2>
 
 <div class="row">
-    <h3>Day 1</h3>
     <table class="table table-striped"> 
-      <tr> <td>08:30</td>  <td>        <ul>
+      <tr> <td>08:30</td>  <td>
+        <ul>
           <li>Setup</li>
           <li><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></li>
-        </ul></td> </tr>
+        </ul>
+      </td> 
+      </tr>
       <tr> <td>09:00</td>  <td>Python Part 1 - Sheldon McKay</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
       <tr> <td>13:00</td>  <td>R Part 2 - Haizi Zheng</td> </tr>
