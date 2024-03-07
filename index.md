@@ -324,30 +324,42 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 
 <h2 id="schedule">Schedule</h2>
 
-    <table class="table table-striped"> 
-      <tr> <td>08:30</td>  <td>
+<table class="table table-striped"> 
+   <tr> 
+     <td>08:30</td>
+     <td>
         <ul>
           <li>Setup</li>
           <li><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></li>
         </ul>
       </td> 
-      </tr>
-      <tr> <td>09:00</td>  <td>Python Part 1 - Sheldon McKay</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Python Part 2 - Haizi Zheng</td> </tr>
-      <tr> <td>15:45</td>  
-        <td>
-          <ul>
-            <li>Wrap-up</li>
-            <li><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p></li>
-          </ul>
-        </td> 
-      </tr>
-      <tr> 
-        <td>16:00</td>
-        <td>END</td>
-      </tr>
-    </table>
+  </tr>
+  <tr> 
+    <td>09:00</td>
+    <td>Python Part 1 - Sheldon McKay</td>
+  </tr>
+  <tr>
+    <td>12:00</td>
+    <td>Lunch break</td>
+  </tr>
+  <tr>
+    <td>13:00</td>
+    <td>Python Part 2 - Haizi Zheng</td>
+  </tr>
+  <tr> 
+    <td>15:45</td>  
+      <td>
+        <ul>
+          <li>Wrap-up</li>
+          <li><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></li>
+        </ul>
+    </td> 
+  </tr>
+  <tr> 
+    <td>16:00</td>
+    <td>END</td>
+  </tr>
+</table>
 
 
 
